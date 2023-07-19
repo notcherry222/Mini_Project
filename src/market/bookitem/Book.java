@@ -2,15 +2,16 @@ package market.bookitem;
 
 public class Book extends Item {
 	//필드 만들기
-	String author;
-	String description;
-	String category;
-	String releaseDate;
+	private String author;
+	private String description;
+	private String category;
+	private String releaseDate;
 
+	//생성자 1
 	public Book(String bookId, String name, int unitPrice) {
 		super(bookId, name, unitPrice);
 	}
-
+	//생성자 2
 	public Book(String bookId, String name, int unitPrice, String author, String description, String category,
 			String releaseDate) {
 		super(bookId, name, unitPrice);
@@ -20,6 +21,7 @@ public class Book extends Item {
 		this.releaseDate = releaseDate;
 	}
 
+	//get, set 으로 필드값 수정하라고 만든.
 	public String getBookId() {
 		return bookId;
 	}

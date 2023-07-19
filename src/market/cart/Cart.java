@@ -41,12 +41,10 @@ public class Cart implements CartInterface {
 
 	public void printCart() {
 		
-//		//��½�Ű��
-//		("��ٱ��� ��ǰ ��� :");
-//		("---------------------------------------------");
-//		("    ����ID \t|     ���� \t|      �հ�");
+		System.out.println("장바구니 상품 목록 : ");
+		System.out.println("---------------------------------------------");
+		System.out.println("    도서ID \t|     수량 \t|      합계");
 
-//���ǹ� ���� mCartItem.size() Ȱ��
 		for (int i =0; i< mCartItem.size(); i++) { // 13
 			System.out.print("    " + mCartItem.get(i).getBookID() + " \t| ");
 			System.out.print("    " + mCartItem.get(i).getQuantity() + " \t| ");
